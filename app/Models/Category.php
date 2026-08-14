@@ -8,6 +8,7 @@ use App\Models\Product;
 
 class Category extends Model
 {
+    use HasFactory;
     protected $fillable = ['name','slug','description','is_active'];
 
     protected $casts = [

@@ -12,6 +12,7 @@ use App\Models\ProductImage;
 
 class Product extends Model
 {
+    use HasFactory;
     protected $fillable = [
         'category_id','name','slug','sku','description',
         'price','stock','is_active',
