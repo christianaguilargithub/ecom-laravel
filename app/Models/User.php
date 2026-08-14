@@ -50,7 +50,7 @@ class User extends Authenticatable
         ];
     }
 
-    public function addresses(): HasMany
+    public function addresses(): HasManys
     {
         return $this->hasMany(Address::class);
     }
